@@ -2,6 +2,9 @@
 """Functions with simple variable annotations"""
 
 
-def sum_list(input_list: list[float]) -> float:
+from typing import List
+
+
+def sum_list(input_list: List[float]) -> float:
     """Function that add up all members of a list of floats"""
     return float(sum(input_list))

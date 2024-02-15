@@ -2,6 +2,9 @@
 """Functions with simple variable annotations"""
 
 
-def sum_mixed_list(mxd_list: list[Union[int, float]]) -> float:
+from typing import List, Union
+
+
+def sum_mixed_list(mxd_list: List[Union[int, float]]) -> float:
     """Function that add up all members of a list of ints & floats"""
     return float(mxd_list)
