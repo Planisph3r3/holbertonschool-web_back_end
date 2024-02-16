@@ -2,9 +2,9 @@
 """Functions with simple variable annotations"""
 
 
-from math import floor
+import math
 
 
-def concat(n: float) -> int:
+def floor(n: float) -> int:
     """Function that rounds down a float and returns an int"""
-    return floor(n)
+    return math.floor(n)
