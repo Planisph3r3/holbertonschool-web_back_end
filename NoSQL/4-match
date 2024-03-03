@@ -1,0 +1,3 @@
+// showing all documents with the specified occurrence
+
+db.school.find({"name":"Holberton school"})
