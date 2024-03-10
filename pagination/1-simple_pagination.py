@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """Logic behind simple pagination"""
 
-from typing import Tuple, List
 import csv
 import math
-
+from typing import Tuple, List
 
 class Server:
     """Server class to paginate a database of popular baby names."""
