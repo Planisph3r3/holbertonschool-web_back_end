@@ -30,7 +30,7 @@ class Server:
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
         tuple_value = index_range(page, page_size)
-        return self.dataset()[tuple_value[0] : tuple_value[1]]
+        return self.dataset()[tuple_value[0]:tuple_value[1]]
 
 
 def index_range(page: int, page_size: int) -> Tuple:
