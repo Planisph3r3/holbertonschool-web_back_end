@@ -5,6 +5,9 @@ import csv
 import math
 from typing import Tuple, List
 
+index_range = __import__('0-simple_helper_function').index_range
+
+
 class Server:
     """Server class to paginate a database of popular baby names."""
 
@@ -30,14 +33,3 @@ class Server:
         assert isinstance(page_size, int) and page_size > 0
         tuple_value = index_range(page, page_size)
         return self.dataset()[tuple_value[0]:tuple_value[1]]
-
-
-def index_range(page: int, page_size: int) -> Tuple:
-    """The function should return a tuple of size two
-    containing a start index and an end index corresponding
-    to the range of indexes to return in a list
-    for those particular pagination parameters"""
-
-    start_index = (page - 1) * page_size
-    end_index = start_index + page_size
-    return (start_index, end_index)
