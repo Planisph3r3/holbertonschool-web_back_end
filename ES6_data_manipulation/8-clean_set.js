@@ -5,16 +5,13 @@ export default function cleanSet(set, string) {
   if (string === '' || !string) {
     return '';
   }
-  let counter = 1;
   for (const element of set) {
-    counter += 1;
     if (element.startsWith(string)) {
-      newString += element.slice(string.length);
-      if (counter !== set.size) {
-        newString += '-';
-      }
+      newString += `${element.slice(string.length)}-`;
     }
   }
-
+  if (newString.endsWith('-')) {
+    newString = newString.slice(0, -1);
+  }
   return newString;
 }
