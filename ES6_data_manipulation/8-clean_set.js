@@ -2,7 +2,7 @@
 
 export default function cleanSet(set, string) {
   let newString = '';
-  if (string === '' || !string) {
+  if (string === '' || !string || typeof string !== 'string') {
     return '';
   }
   for (const element of set) {
