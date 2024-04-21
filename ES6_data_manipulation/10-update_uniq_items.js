@@ -2,7 +2,7 @@
 
 export default function updateUniqueItems(map) {
   if (!(map instanceof Map)) {
-    throw new Error('Cannot Process');
+    throw new Error('Cannot process');
   }
   for (const [key, value] of map.entries()) {
     if (value === 1) {
