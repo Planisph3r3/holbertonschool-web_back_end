@@ -5,7 +5,7 @@ export default function getListStudentIds(param) {
     return [];
   }
   const arrayStore = [];
-  param.forEach((element) => {
+  param.map((element) => {
     arrayStore.push(element.id);
   });
   return arrayStore;
